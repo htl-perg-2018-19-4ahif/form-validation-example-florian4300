@@ -6,7 +6,7 @@
   "scripts": {
     "copy-bootstrap": "cpx ./node_modules/bootstrap/dist/css/bootstrap.css dist/ && cpx ./node_modules/bootstrap/dist/js/bootstrap.js dist/",
     "copy-jquery": "cpx ./node_modules/jquery/dist/jquery.js dist/",
-    "build": "cpx *.{html,css} dist/ && npm run copy-bootstrap && npm run copy-jquery",
+    "build": "cpx *.{html,css} dist/ && npm run copy-bootstrap && npm run copy-jquery && npx tsc --outDir ./dist ",
     "start": "browser-sync start -c bs-config.js"
   },
   "author": "Rainer Stropek",
